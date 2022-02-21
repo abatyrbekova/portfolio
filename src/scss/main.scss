@@ -12,3 +12,63 @@
 
 //Layout
 @import "./layouts/_layouts-dir";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.4s;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* logo */
+.logo {
+    flex-grow: 1;
+}
+.logo img {
+    width: 80px;  
+}
+
+/* Menu */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav {
+    flex-grow: 2;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+header nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+/* Anchor links */
+/* header */
+a,
+a:visited,
+a:link {
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+  transition: 0.5s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+a:hover {
+  transform: scale(2);
+  text-decoration: chocolate;
+}
