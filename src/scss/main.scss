@@ -13,7 +13,7 @@
 //Layout
 @import "./layouts/_layouts-dir";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -24,9 +24,15 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     width: 100vw;
     height: 100vh;
+    // background-color: rgb(92, 92, 100);
+    // background: radial-gradient(#969599, #313646);
+    background: radial-gradient(ellipse at top, #ee5a2d, transparent),
+                radial-gradient(ellipse at right, #0c9df7, transparent),
+                radial-gradient(ellipse at bottom, #0c9df7, transparent),
+                radial-gradient(ellipse at left, #ee5a2d, transparent),;
 }
 
 /* logo */
@@ -34,7 +40,7 @@ body {
     flex-grow: 1;
 }
 .logo img {
-    width: 80px;  
+    width: 100px;  
 }
 
 /* Menu */
