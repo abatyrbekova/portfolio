@@ -113,11 +113,12 @@ a:hover {
     div {
         width: 40rem;
         text-align: center;
+        
         img {
             width: 35rem;
             height: 19rem;
-            border: 2px #ee5a2d solid;
-            border-radius: 3%;
+            border-radius: 25px;
+            box-shadow: 5px 5px 15px rgb(167, 164, 164)
         };
     }
 }
