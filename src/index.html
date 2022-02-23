@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AB Portfolio</title>
+  <link rel="stylesheet" href="./styles/fontawesome-free-6.0.0-beta3-web/css/all.css">
   <link rel="icon" href="./images/logo-1.png">
   <link rel="stylesheet" href="./styles/main.css" />
 </head>
@@ -21,28 +22,61 @@
         <li><a href="#home">Home_</a></li>
         <li><a href="#about">About_</a></li>
         <li><a href="#skills">Skills_</a></li>
-        <li><a href="#portfolio">Portfolio_</a></li>
+        <li><a href="#myworks">Portfolio_</a></li>
         <li><a href="#contact">Contact_</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="main-container">
-      <article>
-        <img src="./images/Portfolio Image.png" alt="">
+      <article id="about">
+        <img src="./images/Portfolio Image.png" alt="Portfolio_image">
         <div class="main-intro">
           <h2>Coding Lover and Free Thinker</h2>
           <p>I'm currently a student at Digital Career Institute.</p>
+          <button>DISCOVER MORE</button>
+          <!-- <a href="#contact" class="btn">Get In Touch</a> -->
         </div>
-        <!-- <a href="#contact" class="btn">Get In Touch</a> -->
-        <button>DISCOVER MORE</button>
+        <div class="social-btn">
+          <a href="https://m.facebook.com/people/Aigerim-Batyrbekova/100001646539160/" target="_blank"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/askataika/?hl=de" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/abatyrbekova" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
       </article>
 
-      <article class="myworks">
+      <article id="skills">
+
         <div>
-          <span>-----MY WORKS</span>
+          <span>-----MY SKILLS-----</span>
+          <h2>What My Programming Skills Included?</h2>
+          <p>I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+            and time with those technologies.</p>
+        </div>
+
+        <div>
+          <a href="#" target="_blank"> <img src="./images/HTML5_logo.png" alt="HTML5_logo"> </a>
+          
+          <a href="#" target="_blank"> <img src="./images/CSS3_logo.png" alt="CSS3_logo"> </a>
+          
+          <a href="#" target="_blank"> <img src="./images/sass-logo-removebg-preview.png" alt="CSS3_logo"> </a>
+
+          <a href="#" target="_blank"> <img src="./images/Visual_Studio_Code.png" alt="CSS3_logo"> </a>
+          
+
+        </div>
+
+
+
+      </article>
+
+      <article id="myworks">
+        <div>
+          <span>-----MY WORKS-----</span>
           <h2>See My Works Which Will Amaze You!</h2>
-          <p>We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+          <p>I try to develop the best quality website that serves for the long-term. <br> Well-documented, clean, easy
+            and
             elegant interface helps any non-technical clients.</p>
         </div>
 
@@ -68,11 +102,73 @@
 
         <div>
           <a href="https://abatyrbekova.github.io/youtube-clone/" target="_blank"><img src="./images/my-work-5.jpg"
-            alt="my-work-5"></a>
+              alt="my-work-5"></a>
         </div>
 
       </article>
+      <article id="contact">
+        <div>
+          <span>-----CONTACT-----</span>
+          <h2>Have You Any Project?</h2>
+          <h2>Please Drop a Message</h2>
+          <p>Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+          </p>
+
+          <h3><img src="./images/phone_in_talk_black_24dp.svg" alt="phone_in_talk_black_24dp"> Phone:</h3>
+          (+49) 163 680 93 01
+
+          <h3><img src="./images/email_black_24dp.svg" alt="email_black_24dp"> Email:</h3>
+          batyrbekova592@gmail.com
+
+          <div>
+            <a href="https://m.facebook.com/people/Aigerim-Batyrbekova/100001646539160/" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/askataika/?hl=de" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/abatyrbekova" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+
+        </div>
+
+        <form action="index.js" method="get">
+          <div>
+            <h4>Name</h4>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="usernameOrEmail" id="1" placeholder="e.g. John Doe">
+          </div>
+
+          <div>
+            <h4>Email</h4>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" id="2" placeholder="e.g. john.doe@gmail.com">
+          </div>
+
+          <div>
+            <h4>Phone <em>(Optional)</em></h4>
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" name="phoneNumber" id="3" placeholder="Phone Number">
+          </div>
+
+          <div>
+            <h4>Message</h4>
+            <i class="fa-solid fa-messages"></i>
+            <textarea name="message" id="4" cols="30" rows="5" placeholder="Write message..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">SEND</button>
+
+        </form>
+      </article>
   </main>
+  <footer>
+    <hr />
+    <div>
+      <h5>Made with ❤️ by Aigerim</h5>
+      <h6>
+        Copyright © <span id="year"></span> AB Inc. All rights reserved.
+      </h6>
+    </div>
+  </footer>
   <!-- Custom scripts, edit above this line -->
   <script src="./scripts/index.js"></script>
 </body>
