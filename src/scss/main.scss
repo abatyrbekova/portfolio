@@ -27,8 +27,6 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     width: 100vw;
     height: 90vh;
-    // background-color: rgb(92, 92, 100);
-    // background: radial-gradient(#969599, #313646);
     background: radial-gradient(ellipse at top, #ee5a2d, transparent),
                 radial-gradient(ellipse at right, #0c9df7, transparent),
                 radial-gradient(ellipse at bottom, #0c9df7, transparent),
@@ -36,35 +34,6 @@ body {
     display: block;
     justify-content: center;
     align-content: center;
-    
-    header {
-        // logo
-        div {
-            width: 20vw;
-            img {
-                width: 120px;
-            }
-        }
-    }
-}
-
-/* Menu */
-header {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 50vw;
-}
-header nav ul li {
-    display: inline;
-    list-style: none;
 }
 
 /* Anchor links */
@@ -81,14 +50,42 @@ a:link {
 }
 a:hover {
   transform: scale(2);
-  text-decoration: chocolate;
 }
 
-// .main-container article {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+/* Logo & Menu */
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    // logo
+    div {
+        width: 20vw;
+        img {
+            width: 120px;
+            }
+            a img:hover {
+                width: 170px;
+            }
+        }
+    // menu
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 50vw;
+        li {
+            display: inline;
+            list-style: none;
+            a:hover {
+                padding: 5px;
+                border: 1px black solid;
+                border-radius: 5px;
+            }
+        }
+    }
+}
 
 /*  Main   */
 .main-container {
@@ -107,15 +104,31 @@ a:hover {
 
 #intro {
     position: relative;
-    height: 80vh;
+    height: 77vh;
     img {
         width: 50rem;
+    }
+    .main-intro {
+        a {
+            border: 1px black solid;
+            border-radius: 5px;
+            padding: 2px;
+            font-size: smaller;
+            font-weight:normal;
+        }
+        a:hover {
+            border-color: orange;
+            background-color: orange
+        }
     }
     .social-btn {
         position: absolute;
         left: 0;
         writing-mode: vertical-rl;
         text-orientation: mixed;
+        a i:hover {
+            color: orange;
+        }
     }
 }
 
@@ -124,7 +137,7 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    // height: 85vh;
+    height: 91vh;
     div {
         width: 25rem;
         text-align: center;
@@ -138,7 +151,7 @@ a:hover {
 }
 
 #skills {
-    height: 95vh;
+    height: 90vh;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
@@ -175,7 +188,7 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    // height: 85vh;
+    height: 90vh;
     div {
         width: 40rem;
         text-align: center;
@@ -191,7 +204,7 @@ a:hover {
 /* footer */
 footer {
     width: 100vw;
-    height: 22vh;
+    height: 16vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
